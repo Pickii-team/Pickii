@@ -3,11 +3,7 @@
 const pxToRem = require('tailwindcss-preset-px-to-rem');
 
 module.exports = {
-  presets: [pxToRem()],
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  presets: [require('tailwindcss-preset-px-to-rem')],
   theme: {
     extend: {
       fontFamily: {
