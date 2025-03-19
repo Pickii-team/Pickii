@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang='en' className={`${pretendard.variable}`}>
       <body className='bg-background font-pretendard'>
-        <main>{children}</main>
+        <main className='ax-w-600 mx-auto h-dvh bg-white shadow-lg'>
+          {children}
+        </main>
       </body>
     </html>
   );
