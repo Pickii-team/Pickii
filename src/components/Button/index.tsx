@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-type ButtonVariant = 'outline' | 'filled';
+type ButtonVariant = 'outline' | 'filled' | 'custom';
 type ButtonColor = 'primary' | 'primary-variant' | 'secondary';
 
 // 유효한 조합만 허용하는 타입
@@ -9,10 +9,18 @@ type ButtonProps =
   | ({
       variant: 'filled';
       buttonColor: ButtonColor;
+      icon?: ReactNode;
     } & ButtonHTMLAttributes<HTMLButtonElement>)
   | ({
       variant: 'outline';
       buttonColor?: never;
+      icon?: ReactNode;
+    } & ButtonHTMLAttributes<HTMLButtonElement>)
+  | ({
+      variant: 'custom';
+      buttonColor?: never;
+      className: string;
+      icon?: ReactNode;
     } & ButtonHTMLAttributes<HTMLButtonElement>);
 
 const getVariant = (
@@ -20,6 +28,7 @@ const getVariant = (
   color?: ButtonColor,
   disabled?: boolean,
 ) => {
+  if (variant === 'custom') return '';
   let buttonStyle = '';
 
   if (variant === 'outline') {
@@ -55,11 +64,17 @@ export default function Button({
   className,
   buttonColor,
   disabled,
+  icon,
   ...props
 }: ButtonProps) {
+  const variantClass =
+    variant === 'custom'
+      ? ''
+      : getVariant(variant, buttonColor ?? 'primary', disabled);
+
   const buttonClasses = twMerge(
     'w-full h-56 py-8 px-16 rounded-8 font-medium',
-    getVariant(variant, buttonColor, disabled),
+    variantClass,
     className,
   );
 
@@ -70,7 +85,8 @@ export default function Button({
       className={buttonClasses}
       {...props}
     >
-      <p>{children}</p>
+      {icon}
+      <p className='basis-full text-medium-01'>{children}</p>
     </button>
   );
 }
