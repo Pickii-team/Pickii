@@ -14,7 +14,7 @@ module.exports = {
         secondary: '#FEECBA',
         secondaryVariant: '#FDD76F',
         background: '#FFFFFF',
-        surface: '#F5F5F5',
+        surface: '#F8F7FC',
         error: '#FF6B6B',
         onPrimary: '#FFFFFF',
         onBackground: '#5C5C5C',
