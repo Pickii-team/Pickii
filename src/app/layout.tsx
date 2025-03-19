@@ -8,13 +8,19 @@ const pretendard = localFont({
   variable: '--font-pretendard',
 });
 
+const rockSalt = localFont({
+  src: '../styles/font/RockSalt.woff2',
+  display: 'swap',
+  variable: '--font-rockSalt',
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={`${pretendard.variable}`}>
+    <html lang='en' className={`${pretendard.variable} ${rockSalt.variable}`}>
       <body className='bg-background font-pretendard'>
         <main className='ax-w-600 mx-auto h-dvh bg-white shadow-lg'>
           {children}

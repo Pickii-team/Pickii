@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         pretendard: ['var(--font-pretendard)'],
+        rockSalt: ['var(--font-rockSalt)'],
       },
       colors: {
         primary: '#D6D0FC',
