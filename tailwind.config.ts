@@ -18,6 +18,16 @@ module.exports = {
         error: '#FF6B6B',
         onPrimary: '#FFFFFF',
         onBackground: '#5C5C5C',
+        'gray-1': '#FAFAFA',
+        'gray-2': '#F5F5F5',
+        'gray-3': '#EEEEEE',
+        'gray-4': '#E0E0E0',
+        'gray-5': '#BDBDBDED',
+        'gray-6': '#9E9E9E',
+        'gray-7': '#757575',
+        'gray-8': '#5C5C5C',
+        'gray-9': '#424242',
+        'gray-10': '#212121',
       },
       backgroundImage: {
         'image-overlay':
