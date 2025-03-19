@@ -32,7 +32,7 @@ const getVariant = (
   let buttonStyle = '';
 
   if (variant === 'outline') {
-    buttonStyle = 'border-2 border-primaryVariant text-primaryVariant bg-white';
+    buttonStyle = 'border border-primaryVariant text-primaryVariant bg-white';
   }
 
   if (variant === 'filled') {
@@ -44,7 +44,8 @@ const getVariant = (
         buttonStyle = 'bg-primaryVariant text-secondary';
         break;
       case 'secondary':
-        buttonStyle = 'bg-secondary text-primaryVariant';
+        buttonStyle =
+          'bg-secondary text-primaryVariant border border-primaryVariant';
         break;
       default:
         buttonStyle = 'bg-primary text-onBackground';
