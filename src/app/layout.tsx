@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={`${pretendard.variable} ${rockSalt.variable}`}>
       <body className='bg-background font-pretendard'>
-        <main className='ax-w-600 mx-auto h-dvh bg-white shadow-lg'>
+        <main className='mx-auto h-dvh max-w-600 bg-white shadow-lg'>
           {children}
         </main>
       </body>
