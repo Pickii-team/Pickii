@@ -10,9 +10,9 @@ export default function Header() {
 
   return (
     <header>
-      <div className='flex justify-between px-16 py-16'>
-        <Logo />
-        {isTotalStat ? <IconSearch /> : isLogin ? <IconUser /> : null}
+      <div className='flex h-64 w-full justify-between px-16 py-16'>
+        <Logo fill />
+        {isTotalStat ? <IconSearch /> : isLogin ? <IconUser /> : <div></div>}
       </div>
     </header>
   );
