@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header>
       <div className='flex h-64 w-full justify-between px-16 py-16'>
-        <Logo fill />
+        <Logo fill='true' />
         {isTotalStat ? <IconSearch /> : isLogin ? <IconUser /> : <div></div>}
       </div>
     </header>

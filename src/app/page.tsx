@@ -7,10 +7,10 @@ export default async function Home() {
   return (
     <>
       <Header />
-      <section className='space-y-20 px-10 text-gray-10'>
+      <section className='space-y-20 px-16 text-gray-10'>
         <div className='flex flex-col items-center gap-12 rounded-8 border border-primaryVariant bg-surface p-20 shadow-elevation1'>
           <div className='flex w-full items-center'>
-            <IconSmileEmoji width={68} height={68} />
+            <IconSmileEmoji width={68} height={68} className='shrink-0' />
             <h2 className='basis-full text-center font-rockSalt text-primaryVariant'>
               What's Your Choice? <br />
               Balance Game

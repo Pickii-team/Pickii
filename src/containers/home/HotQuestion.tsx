@@ -3,12 +3,12 @@ import ImageCover from '@/src/components/ImageCover';
 
 export default function HotQuestion() {
   return (
-    <section className='p-16 space-y-8 border rounded-8 border-primaryVariant'>
+    <section className='space-y-8 rounded-8 border border-primaryVariant p-16'>
       <div className='flex items-center gap-8'>
         <IconFire />
         <h3 className='text-title-04'>지금 가장 치열한 투표</h3>
       </div>
-      <div className='py-4 text-center border rounded-full border-primaryVariant bg-surface text-small-01 text-primaryVariant'>
+      <div className='rounded-full border border-primaryVariant bg-surface py-4 text-center text-small-01 text-primaryVariant'>
         <p>Q. 복숭아</p>
       </div>
       <div className='flex items-center justify-between gap-20'>
@@ -26,9 +26,9 @@ export default function HotQuestion() {
           />
         </div>
       </div>
-      <div className='flex items-center gap-10 mx-10 text-caption-02'>
+      <div className='mx-10 flex items-center gap-10 text-caption-02'>
         <p>51%</p>
-        <div className='flex w-full h-10'>
+        <div className='flex h-10 w-full'>
           <div
             className='h-full rounded-l-full bg-primaryVariant'
             style={{ width: '51%' }}
