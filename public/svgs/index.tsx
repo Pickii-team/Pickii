@@ -8,6 +8,8 @@ import IconVs from './vs.svg';
 import IconElipsis from './elipsis.svg';
 import IconFolderCheck from './folder-check.svg';
 import IconDangerCircle from './danger-circle.svg';
+import IconKakao from './kakao.svg';
+import IconGoogle from './google.svg';
 
 export {
   Logo,
@@ -20,4 +22,6 @@ export {
   IconElipsis,
   IconFolderCheck,
   IconDangerCircle,
+  IconKakao,
+  IconGoogle,
 };
