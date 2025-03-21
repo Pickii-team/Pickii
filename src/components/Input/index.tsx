@@ -21,7 +21,7 @@ type ConditionalInputProps = InputProps extends { variant: 'limit' }
   : InputProps;
 
 const inputContainerStyle =
-  'w-full flex gap-12 justify-between rounded-8 border border-gray-5 text-14 px-16 py-13 focus-within:border-primaryVariant focus-within:bg-surface';
+  'w-full h-48 flex gap-12 justify-between rounded-8 border border-gray-5 text-14 px-16 py-13 focus-within:border-primaryVariant focus-within:bg-surface';
 
 export default function Input({
   inputText,
