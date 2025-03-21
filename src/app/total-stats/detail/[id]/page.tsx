@@ -1,7 +1,7 @@
 import { IconLeftArrow } from '@/public/svgs';
-import VoteResultSection from '@/src/container/question/detail/vote-result-section';
-import CommentsSection from '@/src/container/question/detail/comments-section';
-import FooterSection from '@/src/container/question/detail/footer-section';
+import QuestionStatSection from '@/src/containers/totalstats/detail/question-stat-section';
+import CommentsSection from '@/src/containers/totalstats/detail/comments-section';
+import FooterSection from '@/src/containers/totalstats/detail/footer-section';
 
 const comments = [
   {
@@ -25,7 +25,7 @@ export default function QuestionDetailPage() {
         </button>
       </header>
       <div className='flex basis-full flex-col gap-20 pb-40'>
-        <VoteResultSection />
+        <QuestionStatSection />
         <CommentsSection comments={comments} />
       </div>
       <FooterSection />

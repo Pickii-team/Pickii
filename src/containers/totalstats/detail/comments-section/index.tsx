@@ -1,5 +1,5 @@
 // src/container/question/detail/comments-section.tsx
-import CommentItem from './comment-item';
+import CommentItem from './CommentItem';
 
 interface CommentsSectionProps {
   comments: {

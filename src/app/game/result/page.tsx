@@ -1,7 +1,7 @@
 import Button from '@/src/components/Button';
-import AnswerSection from '@/src/containers/game-result/answer-section';
-import SummarySection from '@/src/containers/game-result/summary-section';
-import ResultInfoSection from '@/src/containers/game-result/result-info-section';
+import AnswerSection from '@/src/containers/game/result/answer-section';
+import SummarySection from '@/src/containers/game/result/summary-section';
+import ResultInfoSection from '@/src/containers/game/result/result-info-section';
 import { IconElipsis, IconDangerCircle, IconFolderCheck } from '@/public/svgs';
 
 const GameResultPage = () => {

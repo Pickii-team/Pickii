@@ -8,11 +8,13 @@ interface Card {
   [key: string]: any;
 }
 
-interface VoteResultCarouselProps {
+interface QuestionStatCarouselProps {
   cards: Card[];
 }
 
-export default function VoteResultCarousel({ cards }: VoteResultCarouselProps) {
+export default function QuestionStatCarousel({
+  cards,
+}: QuestionStatCarouselProps) {
   return (
     <Carousel cards={cards}>
       {(card) => (

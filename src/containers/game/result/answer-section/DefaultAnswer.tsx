@@ -1,5 +1,5 @@
 import React from 'react';
-import PercentageBar from './percentage-bar';
+import PercentageBar from './PercentageBar';
 
 interface AnswerProps {
   questionText: string;

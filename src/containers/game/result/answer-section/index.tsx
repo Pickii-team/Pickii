@@ -1,6 +1,6 @@
 import React from 'react';
-import DefaultAnswer from './default-answer';
-import ComparisonAnswer from './comparison-answer';
+import DefaultAnswer from './DefaultAnswer';
+import ComparisonAnswer from './ComparisoAnswer';
 
 export default function AnswerSection() {
   return (

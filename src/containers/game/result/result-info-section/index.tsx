@@ -1,6 +1,6 @@
-import LoginNotice from './login-notice';
-import SavedNotice from './saved-notice';
-import ResultActions from './result-actions';
+import LoginNotice from './LoginNotice';
+import SavedNotice from './SavedNotice';
+import ResultActions from './ResultActions';
 
 const ResultInfoSection = () => {
   return (

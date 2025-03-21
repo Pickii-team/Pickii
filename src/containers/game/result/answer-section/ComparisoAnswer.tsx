@@ -1,4 +1,4 @@
-import PercentageBar from './percentage-bar';
+import PercentageBar from './PercentageBar';
 
 interface ComparisonAnswerProps {
   questionText: string;

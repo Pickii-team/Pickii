@@ -1,5 +1,5 @@
-import VoteResultBar from './vote-result-bar';
-import VoteResultCarousel from './vote-result-carousel';
+import QuestionStatBar from './QuestionStatBar';
+import QuestionStatCarousel from './QuestionStatCarousel';
 
 type Props = {};
 
@@ -22,7 +22,7 @@ const cards = [
   },
 ];
 
-export default function VoteResultSection({}: Props) {
+export default function QuestionStatSection({}: Props) {
   return (
     <section className='flex w-full flex-col items-center gap-16'>
       <div className='w-full px-16'>
@@ -32,9 +32,9 @@ export default function VoteResultSection({}: Props) {
         </div>
       </div>
 
-      <VoteResultCarousel cards={cards} />
+      <QuestionStatCarousel cards={cards} />
 
-      <VoteResultBar
+      <QuestionStatBar
         answerA='부먹'
         answerB='찍먹'
         totalVotesA={72}

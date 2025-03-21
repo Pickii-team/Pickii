@@ -1,4 +1,4 @@
-interface VoteResultBarProps {
+interface QuestionStatBarProps {
   answerA: string;
   answerB: string;
   totalVotesA: number; // A 항목 비율 (예: 찍먹)
@@ -7,14 +7,14 @@ interface VoteResultBarProps {
   colorB: string; // B 항목 색상 (부먹 색상)
 }
 
-export default function VoteResultBar({
+export default function QuestionStatBar({
   answerA,
   answerB,
   totalVotesA,
   totalVotesB,
   colorA,
   colorB,
-}: VoteResultBarProps) {
+}: QuestionStatBarProps) {
   const votesSum = totalVotesA + totalVotesB;
 
   return (
