@@ -1,12 +1,10 @@
-'use client';
-
 import {
   Dispatch,
   InputHTMLAttributes,
   ReactNode,
   SetStateAction,
 } from 'react';
-import { IconClose } from '@/public/svgs';
+import { IconCloseCircle } from '@/public/svgs';
 import TextLengthCounter from './TextLengthCounter';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -51,7 +49,7 @@ export default function Input({
         {/* 클리어 버튼*/}
         {hasClearButton && inputText && (
           <button type='button' onClick={() => setInputText('')}>
-            <IconClose />
+            <IconCloseCircle />
           </button>
         )}
       </div>
