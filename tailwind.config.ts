@@ -32,7 +32,7 @@ module.exports = {
       },
       backgroundImage: {
         'image-overlay':
-          'linear-gradient(to top, rgba(0, 0, 0, 0.6) 32%, rgba(34, 34, 34, 0.3) 74%, rgba(170, 170, 170, 0.13) 100%)',
+          'linear-gradient(to top, rgba(0, 0, 0, 0.6) 32%, rgba(34, 34, 34, 0.3) 74%, rgba(170, 170, 170, 0) 100%)',
       },
       boxShadow: {
         elevation1: '0px 4px 4px rgba(0, 0, 0, 0.15)',
