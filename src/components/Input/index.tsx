@@ -7,18 +7,24 @@ import {
 import { IconCloseCircle } from '@/public/svgs';
 import TextLengthCounter from './TextLengthCounter';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface BaseInputProps extends InputHTMLAttributes<HTMLInputElement> {
   inputText: string;
   setInputText: Dispatch<SetStateAction<string>>;
-  variant: 'default' | 'limit';
   hasClearButton: boolean;
-  maxLength?: number;
   children?: ReactNode;
 }
 
-type ConditionalInputProps = InputProps extends { variant: 'limit' }
-  ? InputProps & { maxLength: number }
-  : InputProps;
+interface DefaultInputProps extends BaseInputProps {
+  variant: 'default';
+  maxLength?: never;
+}
+
+interface LimitInputProps extends BaseInputProps {
+  variant: 'limit';
+  maxLength: number;
+}
+
+type InputProps = DefaultInputProps | LimitInputProps;
 
 const inputContainerStyle =
   'w-full h-48 flex gap-12 justify-between rounded-8 border border-gray-5 text-14 px-16 py-13 focus-within:border-primaryVariant focus-within:bg-surface';
@@ -32,7 +38,7 @@ export default function Input({
   maxLength = 5,
   children,
   ...props
-}: ConditionalInputProps) {
+}: InputProps) {
   return (
     <div className={inputContainerStyle}>
       <div className='flex w-full justify-between gap-12'>
